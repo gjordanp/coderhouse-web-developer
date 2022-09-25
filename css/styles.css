@@ -13,6 +13,7 @@ a{
     color: inherit;
 }
 
+
 /* --------------------Titulos---------------------------- */
 .titulo{
     font-size: 3rem;
@@ -99,7 +100,9 @@ a{
 i:hover > .navMobile__lista{
     display: flex;
     animation: aparecer 1s;
-}
+} 
+
+
 
 i{
     font-style: normal;

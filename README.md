@@ -1,6 +1,9 @@
 # Coderhouse-Web-Developer
-Curso Web Debeloper de CoderHouse
+Curso Web Developer de CoderHouse
 ## Materias Cursadas
 - Html
 - Css
+    - flex
+    - grids
+    - boostrap
 - Github
