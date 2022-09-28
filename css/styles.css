@@ -58,12 +58,22 @@ a{
 .bi-list{
     font-size: 2rem;
     color: white;
+    transition: 1s transform ease;
 }
 
-@keyframes aparecer {
+.bi-x{
+    z-index: 1;
+    font-size: 2rem;
+    color: white;
+    justify-content: end;
+    transition: 1s transform ease;
+}
+
+
+/* @keyframes aparecer {
     0%{opacity: 0;}
     100%{opacity: 1;}
-}
+} */
 /* .bi-list:hover{
 
     .navMobile{
@@ -79,30 +89,53 @@ a{
     position: absolute;
     padding: 5px;
 }
-.navMobile__lista{
-    display: none;
-    position: absolute;
-    padding: 15px;
-    top: 0;
-    right: 0;
+.navMobile__background{
+    display: grid;
+    opacity: 0;
+    justify-content: center;
+    position: fixed;
     height: 100vh;
-    width: 70vw;
-    background-color: #1d1d1dde;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.70);
+    transition: 1s opacity ease;
+}
+.navMobile__lista{
+    display: flex;
+    border-radius: 10px;
+    height: 80vh;
+    width: 80vw;
+    background: linear-gradient(#004E64, #007999);
     list-style: none;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 20px;
+    align-self: center;
 }
 .navMobile__lista:hover{
     display: flex;
 }
 
-i:hover > .navMobile__lista{
-    display: flex;
+/* i:hover .navMobile__lista{
     animation: aparecer 1s;
+}  */
+
+
+.bi-list:hover > .navMobile__background{
+    opacity: 1;
 } 
-
-
+#navCloseBtn:hover + .navMobile__background{
+    opacity: 0;
+} 
+#navCloseBtn{
+width: auto;
+align-self: flex-end;
+transition: 1s transform ease;
+}
+#navCloseBtn:hover{
+    transform: rotate(360deg);
+    background-color: transparent;
+}
 
 i{
     font-style: normal;
@@ -112,6 +145,7 @@ i{
 
 .navMobile__lista li{
     font-size: 2rem;
+    margin: 10px;
 }
 .navMobile__lista li:hover{
     color: #007999;
@@ -199,7 +233,6 @@ z-index: -1;
 .contacto{
     min-height: calc(100vh - 80px - 120px);
     background: linear-gradient(#004E64, #007999); 
-    position: relative;
     padding: 5vw;
 }
 .contacto__formulario{
@@ -209,7 +242,6 @@ z-index: -1;
     align-items: center;
     padding: 10px;
     height: 100%;
-
     gap: 20px;
 }
 .contacto__label{
