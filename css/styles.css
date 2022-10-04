@@ -54,6 +54,7 @@ body{
     
 }
 /*------------------- Barra Navegacion-------------------- */
+
 .barraNav{
     display: flex;
     justify-content: space-between;
