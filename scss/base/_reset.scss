@@ -1,0 +1,16 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+//Quitamos decoracion a etiquetas ancla
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+//Definimos resolucion minima de 320 para no distorsionar la pagina en pantallas muy pequeñas
+body{
+    min-width: 320px;
+}
