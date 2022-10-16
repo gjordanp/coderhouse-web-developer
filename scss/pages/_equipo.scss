@@ -1,0 +1,62 @@
+
+.equipo{
+    height: auto;
+    background: linear-gradient($c-primario, $c-secundario); 
+    @include dflex(column,flex-start,flex-start);
+    padding: 5vw;
+    gap: 20px;
+
+    &__parrafo{
+        color: white;
+        text-align: left;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}
+
+.colaboradores{
+    height: auto;
+    background: linear-gradient($c-primario, $c-secundario); 
+    @include dflex(column,flex-start,flex-start);
+    padding: 5vw;
+    gap: 30px;
+}
+
+.imgEquipo{
+    width: 100%;
+    border-radius: 15px;
+}
+.tarjeta{
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    width: max(30%, 350px);
+    &__nombre{
+        color: white;
+        text-align: left;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    &__cargo{
+        color: white;
+        text-align: left;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    &__profesion{
+        color: white;
+        text-align: left;
+        font-size: 1.0rem;
+        font-weight: 400;
+    }
+    &__contenedor{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    &__img {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
