@@ -32,27 +32,28 @@
     border-radius: 10px;
     width: max(30%, 350px);
     &__nombre{
-        color: white;
+        color: $c-blanco;
         text-align: left;
         font-size: 1.5rem;
         font-weight: 400;
     }
     &__cargo{
-        color: white;
+        color: $c-blanco;
         text-align: left;
         font-size: 1.2rem;
         font-weight: 400;
     }
     &__profesion{
-        color: white;
+        color: $c-blanco;
         text-align: left;
         font-size: 1.0rem;
         font-weight: 400;
     }
     &__contenedor{
-        display:flex;
+        @include dflex(row,center);
+        // display:flex;
+        // justify-content: center;
         flex-wrap: wrap;
-        justify-content: center;
         gap: 20px;
     }
     &__img {
