@@ -92,6 +92,7 @@
         align-self: center;
         gap: 100px;
         transition: 0.5s all ease; 
+        overflow: auto;
 
         & li{
             font-size: 2rem;

@@ -141,6 +141,7 @@ html {
   align-self: center;
   gap: 100px;
   transition: 0.5s all ease;
+  overflow: auto;
 }
 .navMobile__lista li {
   font-size: 2rem;
